@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html"><img class="logo" src="static/Logo.svg" alt="logo alura"></a>
+    </header>
+    <main>
+        <!-- Section da esquerda -->
+        <section class="section-1">
+            <div class="section-1-textarea">
+                <textarea class="section-1-textarea-text" placeholder="Digite seu texto" id="texto"></textarea>
+            </div>
+            <div class="section-1-alert">
+                <img class="section-1-icone" src="static/Vector.svg" alt="Icone de atenção">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="section-1-buttons">
+                <button type="button" class="btn-codificar" id="encriptar">Codificar</button>
+                <button type="button" class="btn-decodificar" id="desencriptar">Decodificar</button>
+            </div>
+        </section>
+
+        <!-- Section da direita -->
+        <section class="section-2">
+            <div class="section-2-resposta">
+                <p class="resposta" id="resultado"></p>
+            </div>
+            <div class="section-2-image" id="imagem">
+                <img class="esconder" src="static/High quality products 1 1.svg"
+                    alt="desenho de um homem olhando um diamante ">
+                <div class="section-2-warning">
+                    <span class="section-2-warning-1">
+                        <p>Nenhuma mensagem encontrada.</p>
+                    </span>
+                    <span class="section-2-warning-2">
+                        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="section-2-warning">
+                <button class="btn-copiar" type="button" id="copiar">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p>desenvolvido por <a href="https://github.com/henriquejessex" target="_blank" rel="noopener">jessé
+                henrique</a>
+        </p>
+    </footer>
+    <script src="decodificador.js"></script>
+
+</body>
+
+</html>
